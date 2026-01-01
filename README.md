@@ -18,6 +18,7 @@ Used in penetration testing & cyber investigations
 Types of Information Gathering
 
  1. Passive Information Gathering
+    
 ✔ No direct contact with the target
 ✔ Low risk, hard to detect
 
@@ -36,14 +37,17 @@ Shodan
 Recon-ng
 
 2. Active Information Gathering
+   
 ✔ Direct interaction with target
 ✔ More accurate but risky
 
 Examples:
+
 Ping scan
 Port scanning
 Network mapping
 Banner grabbing
+
 🛠 Tools:
 Nmap
 Netcat
@@ -69,12 +73,14 @@ Security
 Firewalls, IDS
 
 Techniques Used
-🔸 Google Dorking
+
+ Google Dorking
 Advanced search queries to find sensitive data.
+
 Example:
 Copy code
-
 site:example.com filetype:pdf
+
 🔸 WHOIS Enumeration
 Finds domain ownership details.
 Information Found:
@@ -82,6 +88,7 @@ Owner name
 Email
 Phone
 DNS servers
+
 🔸 DNS Enumeration
 Reveals DNS records.
 Records:
@@ -89,11 +96,11 @@ A
 MX
 NS
 TXT
+
 🔸 Network Scanning
 Identifies live hosts and services.
-Example Nmap Command:
-Copy code
 
+Example Nmap Command:
 nmap -sS -sV target_ip
 
 Tools Summary
@@ -116,9 +123,11 @@ Identifies attack sources
 Correlates logs & traffic
 Supports digital forensics
 
- Legal & Ethical Considerations ⚠️
+ Legal & Ethical Considerations 
+ 
 ✔ Permission required
 ❌ Illegal without authorization
+
 Ethical Rule:
 “Only test systems you own or have written permission to test.”
 
