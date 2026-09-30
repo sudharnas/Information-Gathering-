@@ -1,154 +1,170 @@
-Information Gathering (Reconnaissance)
+# 🔎 Information Gathering (Reconnaissance)
 
+![Status](https://img.shields.io/badge/status-completed-blue)
+![Phase](https://img.shields.io/badge/phase-1%20of%20Ethical%20Hacking-red)
+![Focus](https://img.shields.io/badge/focus-OSINT%20%7C%20Recon-orange)
 
- Definition
- 
-Information Gathering is the first phase of Ethical Hacking where a hacker collects details about a target without attacking it directly.
+## 📌 Definition
 
-Goal:
-To understand the target’s system, network, users, and security posture.
+**Information Gathering** (a.k.a. Reconnaissance) is the **first phase of Ethical Hacking**, where an attacker collects details about a target *without attacking it directly*.
 
-Why Information Gathering is Important
-Identifies weak points
-Reduces attack time
-Helps in planning attacks
-Avoids unnecessary detection
-Used in penetration testing & cyber investigations
+**Goal:** Understand the target's system, network, users, and security posture.
 
-Types of Information Gathering
+> ⚠️ **Ethical Rule:** Only test systems you own or have **written permission** to test. Unauthorized reconnaissance is illegal.
 
- 1. Passive Information Gathering
-    
-✔ No direct contact with the target
-✔ Low risk, hard to detect
+---
 
-Examples:
-Google search
-Social media analysis
-WHOIS lookup
-DNS records
-Job portals
+## 🎯 Why Information Gathering Matters
 
-🛠 Tools:
-Google Dorks
-WHOIS
-Maltego
-Shodan
-Recon-ng
+- Identifies weak points before exploitation
+- Reduces attack time and noise
+- Helps plan a targeted attack strategy
+- Avoids unnecessary detection
+- Essential for penetration testing & cyber investigations
 
-2. Active Information Gathering
-   
-✔ Direct interaction with target
-✔ More accurate but risky
+---
 
-Examples:
+## 🧭 Types of Information Gathering
 
-Ping scan
-Port scanning
-Network mapping
-Banner grabbing
+### 🟢 Passive Information Gathering
+**No direct contact with the target** · Low risk · Hard to detect
 
-🛠 Tools:
-Nmap
-Netcat
-Angry IP Scanner
-Wireshark
+**Examples:**
+- Google search / Google Dorks
+- Social media analysis
+- WHOIS lookup
+- DNS records
+- Job portals
 
- Information Collected
-Category
-Details
-Domain Info
-Domain name, registrar
-IP Address
-Public & private IPs
-Network
-Open ports, services
-OS Details
-Linux, Windows, version
-Email Info
-Employee emails
-Technologies
-Web server, CMS
-Security
-Firewalls, IDS
+**🛠 Tools:** Google Dorks · WHOIS · Maltego · Shodan · Recon-ng
 
-Techniques Used
+---
 
- Google Dorking
+### 🔴 Active Information Gathering
+**Direct interaction with the target** · More accurate · Higher risk
+
+**Examples:**
+- Ping scan
+- Port scanning
+- Network mapping
+- Banner grabbing
+
+**🛠 Tools:** Nmap · Netcat · Angry IP Scanner · Wireshark
+
+---
+
+## 📊 Information Collected
+
+| Category | Details |
+|----------|---------|
+| **Domain Info** | Domain name, registrar |
+| **IP Address** | Public & private IPs |
+| **Network** | Open ports, running services |
+| **OS Details** | Linux, Windows, version |
+| **Email Info** | Employee emails |
+| **Technologies** | Web server, CMS |
+| **Security** | Firewalls, IDS |
+
+---
+
+## 🛠 Techniques Used
+
+### 1. Google Dorking
 Advanced search queries to find sensitive data.
 
-Example:
-Copy code
+```
 site:example.com filetype:pdf
+```
 
-🔸 WHOIS Enumeration
+### 2. WHOIS Enumeration
 Finds domain ownership details.
-Information Found:
-Owner name
-Email
-Phone
-DNS servers
+**Information found:** owner name, email, phone, DNS servers.
 
-🔸 DNS Enumeration
+### 3. DNS Enumeration
 Reveals DNS records.
-Records:
-A
-MX
-NS
-TXT
+**Records:** `A` · `MX` · `NS` · `TXT`
 
-🔸 Network Scanning
+### 4. Network Scanning
 Identifies live hosts and services.
 
-Example Nmap Command:
-nmap -sS -sV target_ip
+```bash
+nmap -sS -sV <target_ip>
+```
 
-Tools Summary
-Tool
-Purpose
-Nmap
-Network scanning
-Maltego
-Relationship mapping
-Shodan
-Internet-connected devices
-Recon-ng
-Web reconnaissance
-Wireshark
-Packet analysis
+---
 
- Information Gathering in Cyber Crime Investigation
-Tracks IP location
-Identifies attack sources
-Correlates logs & traffic
-Supports digital forensics
+## 🧰 Tools Summary
 
- Legal & Ethical Considerations 
- 
-✔ Permission required
-❌ Illegal without authorization
+| Tool | Purpose |
+|------|---------|
+| **Nmap** | Network scanning |
+| **Maltego** | Relationship mapping |
+| **Shodan** | Internet-connected devices |
+| **Recon-ng** | Web reconnaissance |
+| **Wireshark** | Packet analysis |
+| **WHOIS** | Domain ownership lookup |
 
-Ethical Rule:
-“Only test systems you own or have written permission to test.”
+---
 
-Example Scenario
-A company hires a penetration tester.
-Steps:
-Google search company
-Find employee emails
-Scan network with Nmap
-Identify open ports
-Plan attack strategy
+## 🕵️ Information Gathering in Cyber Crime Investigation
 
-Exam-Oriented Short Notes
-Information Gathering = Reconnaissance
-First phase of ethical hacking
-Passive = No interaction
-Active = Direct interaction
-Google Dorks = Powerful OSINT
-Nmap = Key scanning tool
+- Tracks IP location
+- Identifies attack sources
+- Correlates logs & traffic
+- Supports digital forensics
 
+---
 
+## ⚖️ Legal & Ethical Considerations
 
-📌 One-Line Definition 
-Information Gathering is the process of collecting system, network, and user-related data about a target to identify potential security vulnerabilities.
+- ✅ **Permission required**
+- ❌ **Illegal without authorization**
+
+> *"Only test systems you own or have written permission to test."*
+
+---
+
+## 🧪 Example Scenario
+
+A company hires a penetration tester. Steps:
+
+1. Google search the company (passive)
+2. Find employee emails (passive)
+3. Scan the network with Nmap (active)
+4. Identify open ports (active)
+5. Plan the attack strategy
+
+---
+
+## 📝 Exam-Oriented Short Notes
+
+- Information Gathering = **Reconnaissance**
+- **First phase** of ethical hacking
+- **Passive** = no interaction
+- **Active** = direct interaction
+- **Google Dorks** = powerful OSINT
+- **Nmap** = key scanning tool
+
+---
+
+## 📌 One-Line Definition
+
+> Information Gathering is the process of collecting system, network, and user-related data about a target to identify potential security vulnerabilities.
+
+---
+
+## 📄 Project Files
+
+- `Information Gathering Report .pdf` — full written report
+- `Information Gathering Challenge.pdf` — challenge documentation
+
+## 📚 References
+
+- [OWASP: Information Gathering](https://owasp.org/www-community/OWASP_Testing_Guide)
+- [Nmap Documentation](https://nmap.org/book/man.html)
+- [Google Hacking Database (GHDB)](https://www.exploit-db.com/google-hacking-database)
+
+## 👤 Author
+
+**S. Sudharna** — Cybersecurity | Ethical Hacking  
+GitHub: [@sudharnas](https://github.com/sudharnas)
